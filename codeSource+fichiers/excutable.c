@@ -302,7 +302,7 @@ void show_formulas()
                 getchar();
 
                 char command[200];
-                sprintf(command, "logic_solver %s", files[file_choice - 1].filename);
+                sprintf(command, "solver_engine %s", files[file_choice - 1].filename);
                 system(command);
 
                 printf("\nPress Enter to continue...");
